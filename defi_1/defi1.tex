@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\title{Defi Lovelace N°1}
+\author{Hugo Demaret}
+\date{Octobre 2021}
+\begin{document}
+\maketitle
+    \section*{Jeu en bois -}
+        \textbf{Alice aime beaucoup jouer à un jeu qui contient des billes en bois colorés de deux couleurs différentes.}\\
+        \textbf{Ce jeu se joue sur une planche en bois avec n trous, qui sont tous remplis d'une seule bille (il y a donc n billes). \\Une bille peut être de deux couleurs : ici bleue ou rouge.}\\\\
+        \textit{Voici un schéma du jeu en question avec 8 billes :}
+        \begin{center}
+            \begin{table}[h]
+                \begin{tabular}{|c|c|c|c|c|c|c|c| p{15cm}}
+                    \hline 
+                    \begin{tikzpicture}
+                        \node[circle,draw=red,fill=red,minimum size = 25](a) at (0,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=blue,fill=blue,minimum size = 25](b) at (1,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=blue,fill=blue,minimum size = 25](c) at (2,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=blue,fill=blue,minimum size = 25](d) at (3,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=red,fill=red,minimum size = 25](e) at (4,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=red,fill=red,minimum size = 25](f) at (5,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=blue,fill=blue,minimum size = 25](g) at (6,0) {};
+                    \end{tikzpicture}&
+                    \begin{tikzpicture}
+                        \node[circle,draw=red,fill=red,minimum size = 25](h) at (7,0) {};
+                    \end{tikzpicture}\\
+                    \hline
+                \end{tabular}
+            \end{table}
+        \end{center}
+        \textbf{Le but du jeu est de séparer les billes bleues des billes rouges, de sorte à ce qu'un coté (arbitrairement choisit) contienne les billes rouges, et l'autre les billes bleues.}
+        \subsection*{1 -}
+            \textsf{Proposez une solution à ce problème, sous la forme d'un script python.}\\
+        \subsection*{2 -}
+            \textsf{Ryan, un ami d'Alice, dit que pour un jeu de n billes, on peut toujours résoudre la planche en au plus n+1 coups. A-t-il raison ?}\\
+            \textit{Expliquez votre raisonnement.}
+\end{document}
